@@ -1,10 +1,14 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px 0px 0px;
   background-color: #1e1e24;
   color: white;
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  border-bottom: 2px solid transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(to right, #487987, #6ecee9, #bde2ec) 1;
 }
 
 .logo {
@@ -15,4 +19,75 @@ nav {
 .nav-logo-div {
   display: flex;
   color: #6ecee9;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #1e1e24;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(to right, #487987, #6ecee9, #bde2ec) 1;
+  min-width: 160px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  /* position: relative; */
+}
+
+.dropdown-item a {
+  color: white;
+  display: block;
+  padding: 8px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #6ecee9;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start outside the element */
+  width: 250%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transform: skewX(-20deg);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.dropdown-menu.open::before {
+  animation: shine 0.3s ease-in-out forwards;
+}
+
+@keyframes shine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 200%;
+  }
 }
