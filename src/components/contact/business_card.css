@@ -1,0 +1,100 @@
+.business-card {
+  margin-bottom: 40px;
+}
+
+
+.card-top {
+  text-align: center;
+}
+
+.card-top img {
+  width: 317px;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-info {
+  width: 277px;
+  height: fit-content;
+  background-color: #181b1e;
+  padding: 10px 20px 20px 20px;
+}
+
+.card-top-info {
+  width: 277px;
+  height: fit-content;
+  background-color: #181b1e;
+  padding: 20px 20px 0px 20px;
+}
+
+.card-top h3 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.business-card h4 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.green-subtitle {
+  font-size: 13px;
+  margin: 5px 0 5px 0;
+  color: #F3BF99;
+}
+
+.github-subtitle {
+  font-size: 10px;
+  color: white;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-button {
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.social-button.email {
+  background-color: white;
+  border: 1px solid #D1D5DB;
+  color: black;
+  margin-right: 20px;
+}
+
+.social-button.email i {
+  margin-right: 6px;
+}
+
+.social-button.linkedin {
+  background-color: #5093E2;
+  color: white;
+}
+
+.social-button.linkedin i {
+  margin-right: 4px;
+}
+
+.business-card-p {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.card-bottom {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 20px 20px 20px;
+}
+
+.card-bottom > a {
+  color: white;
+  font-size: x-large;
+}

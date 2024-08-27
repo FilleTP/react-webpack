@@ -1,0 +1,21 @@
+.home-container-content {
+  padding: 0 20px 0 20px;
+}
+
+.home-container-ul li {
+  position: relative;
+  padding-left: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+.home-container-ul > li::before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 2em;
+	height: 2em;
+	background-repeat: no-repeat;
+  background-size: contain; /* Ensures the SVG scales correctly */
+  background-image: url('../../images/logo.svg');
+}

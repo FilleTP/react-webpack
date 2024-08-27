@@ -11,6 +11,10 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
 
 }
@@ -26,4 +30,8 @@ h3 {
 
 h4 {
 
+}
+
+ul {
+  list-style-type: none;
 }
